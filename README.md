@@ -1,7 +1,5 @@
 # lifeofguenter.resolvconf
 
-[![Build Status](https://travis-ci.com/lifeofguenter/ansible-role-resolvconf.svg?branch=main)](https://travis-ci.com/lifeofguenter/ansible-role-resolvconf)
-
 An Ansible role to configure /etc/resolv.conf
 
 ## Role Variables
