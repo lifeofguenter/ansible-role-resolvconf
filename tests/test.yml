@@ -1,6 +1,7 @@
 ---
 
 - hosts: localhost
+
   vars:
     resolv_nameservers:
       - 8.8.8.8
@@ -12,5 +13,8 @@
     resolv_options:
       - timeout:2
       - rotate
-  roles:
-    - ansible-role-resolvconf
+
+  tasks:
+    - name: Import project role
+      ansible.builtin.import_role:
+        name: project

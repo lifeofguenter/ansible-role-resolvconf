@@ -8,30 +8,16 @@ galaxy_info:
   license: MIT
   min_ansible_version: '2.10'
   platforms:
-    - name: EL
-      versions:
-        - all
-    - name: GenericUNIX
-      versions:
-        - all
-    - name: Fedora
-      versions:
-        - all
-    - name: opensuse
-      versions:
-        - all
-    - name: Ubuntu
-      versions:
-        - all
-    - name: SLES
-      versions:
-        - all
-    - name: GenericLinux
-      versions:
-        - all
     - name: Debian
       versions:
-        - all
+        - bookworm
+        - bullseye
+        - buster
+    - name: Ubuntu
+      versions:
+        - jammy
+        - focal
+        - bionic
   galaxy_tags:
     - system
     - resolvconf
