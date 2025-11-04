@@ -6,8 +6,9 @@ jobs:
 
   build:
     machine:
-      # https://circleci.com/docs/2.0/configuration-reference/#machine
-      image: ubuntu-2004:202201-02
+      # https://circleci.com/developer/machine/image/ubuntu-2404
+      image: ubuntu-2404:2024.11.1
+    resource_class: large
     environment:
       ANSIBLE_PYTHON_INTERPRETER: /usr/bin/python3
 

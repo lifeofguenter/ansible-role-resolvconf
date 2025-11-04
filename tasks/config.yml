@@ -6,7 +6,15 @@
     state: stopped
     enabled: false
   become: true
-  when: dpkg_check_systemd_resolved is success
+  when: dpkg_check_systemd_resolved.rc == 0
+
+- name: Ensure openresolv is not installed
+  ansible.builtin.apt:
+    name: openresolv
+    state: absent
+    purge: true
+    autoremove: true
+  become: true
 
 - name: Stat current resolv.conf
   ansible.builtin.stat:

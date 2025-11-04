@@ -3,8 +3,8 @@
 - name: Check if systemd-resolved is installed
   ansible.builtin.command: dpkg -L systemd-resolved
   register: dpkg_check_systemd_resolved
-  ignore_errors: true
   changed_when: false
+  failed_when: "'command not found' in dpkg_check_systemd_resolved.stderr"
 
 - name: Import config.yml
   ansible.builtin.import_tasks: config.yml

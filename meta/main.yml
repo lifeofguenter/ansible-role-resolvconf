@@ -10,14 +10,13 @@ galaxy_info:
   platforms:
     - name: Debian
       versions:
+        - trixie
         - bookworm
         - bullseye
-        - buster
     - name: Ubuntu
       versions:
+        - noble
         - jammy
-        - focal
-        - bionic
   galaxy_tags:
     - system
     - resolvconf
